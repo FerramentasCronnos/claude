@@ -1,5 +1,5 @@
 // Renderiza animation.html quadro a quadro (Playwright/Chromium) e codifica em MP4 (H.264).
-// Uso: node render.mjs                -> renderiza os 10 s completos em output/seu-video-ja-comecou-10s.mp4
+// Uso: node render.mjs                -> renderiza os 10 s completos em output/tu-video-ya-comenzo-10s.mp4
 //      node render.mjs --preview 0.3,1.55,2.0  -> salva quadros isolados em output/preview_<t>.png
 import { chromium } from 'playwright';
 import { spawnSync } from 'node:child_process';
@@ -12,7 +12,7 @@ const previewIdx = args.indexOf('--preview');
 const preview = previewIdx >= 0 ? args[previewIdx + 1].split(',').map(Number) : null;
 const outDir = path.resolve('output');
 const framesDir = path.join(outDir, 'frames');
-const outFile = path.join(outDir, 'seu-video-ja-comecou-10s.mp4');
+const outFile = path.join(outDir, 'tu-video-ya-comenzo-10s.mp4');
 fs.mkdirSync(framesDir, { recursive: true });
 
 const browser = await chromium.launch();

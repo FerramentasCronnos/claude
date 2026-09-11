@@ -1,9 +1,9 @@
 {
-  "name": "seu-video-ja-comecou-animacao",
+  "name": "tu-video-ya-comenzo-animacao",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Animação de 10 s 'Seu vídeo já começou! / Clique para ouvir' (relógio + botão + dedo clicando), renderizada em MP4.",
+  "description": "Animação de 10 s '¡Tu video ya comenzó! / Haz clic para escuchar' (relógio + botão + dedo clicando), renderizada em MP4.",
   "scripts": {
     "render": "node render.mjs",
     "preview": "node render.mjs --preview 0.3,1.0,1.55,2.0,4.7"

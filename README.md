@@ -1,8 +1,9 @@
-# Animação "Seu vídeo já começou!" (10 s)
+# Animação "¡Tu video ya comenzó!" (10 s)
 
 Animação de 10 segundos para overlay de VSL, reproduzindo a referência enviada:
-quadro preto 16:9 com o texto **SEU VÍDEO JÁ COMEÇOU!**, um relógio com ponteiros
-girando, o botão laranja **CLIQUE PARA OUVIR** e um dedo que clica no botão.
+quadro preto 16:9 com o texto **¡TU VIDEO YA COMENZÓ!**, um relógio com ponteiros
+girando, o botão laranja **HAZ CLIC PARA ESCUCHAR** e um dedo que clica no botão.
+Todo o texto está em espanhol latino neutro.
 
 ## Linha do tempo
 
@@ -18,7 +19,7 @@ O vídeo é formado por dois ciclos idênticos de 5 s, então ele também fecha 
 | 4,65 – 4,85 s | …e o texto de baixo (com o dedo) também some. |
 | 5,00 s | O ciclo recomeça: relógio volta, depois o texto de baixo volta. |
 
-Arquivo final: `output/seu-video-ja-comecou-10s.mp4` (1920×1080, 60 fps, H.264, 10 s, fundo preto).
+Arquivo final: `output/tu-video-ya-comenzo-10s.mp4` (1920×1080, 60 fps, H.264, 10 s, fundo preto).
 
 ## Como renderizar de novo
 
@@ -27,7 +28,7 @@ Requisitos: Node 18+, Playwright (Chromium) e `ffmpeg` no PATH.
 ```bash
 npm install
 npx playwright install chromium   # só na primeira vez
-npm run render                     # gera output/seu-video-ja-comecou-10s.mp4
+npm run render                     # gera output/tu-video-ya-comenzo-10s.mp4
 npm run preview                    # salva alguns quadros em output/preview_*.png
 ```
 
